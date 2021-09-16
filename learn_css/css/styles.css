@@ -1,0 +1,65 @@
+.rose{
+	width: 150px;
+	float: left;
+	margin: 0px 15px 15px 0px;
+	border: 3px solid green;
+}
+.sometext{
+	font-size: 23px;
+	text-align: justify;
+}
+#div1{
+	background-color: red;
+}
+#div2{
+	background-color: green;
+}
+#div3{
+	background-color: blue;
+}
+.square{
+	width: 50px;
+	height: 50px;
+	font-size: 17px;
+	color: white;
+	padding: 15px;
+	float: left;
+}
+.hello{
+	border: 3px solid green;
+	float: left;
+	padding: 10px;
+	/*width: 50%;*/
+}
+.say{
+	padding: 10px;
+	border: 3px solid red;
+	clear: both;
+
+}
+.say::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.wish{
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+}
+/*.wish::before {
+	content: "Hello ";
+}
+.wish::after {
+	content: ", How are you? ";
+}*/
+.wish::after {
+	content: "";
+	width: 60px;
+	height: 3px;
+	background-color: red;
+	display: inline-block;
+	position: absolute;
+	bottom: -8px;
+	left:calc( 50% - 30px);
+}
